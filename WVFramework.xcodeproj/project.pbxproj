@@ -10,6 +10,7 @@
 		913FB7A82075D302003B49B1 /* WVFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 913FB79E2075D301003B49B1 /* WVFramework.framework */; };
 		913FB7AD2075D302003B49B1 /* WVFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FB7AC2075D302003B49B1 /* WVFrameworkTests.swift */; };
 		913FB7AF2075D302003B49B1 /* WVFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 913FB7A12075D301003B49B1 /* WVFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		913FB7B92075D31C003B49B1 /* WVFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913FB7B82075D31C003B49B1 /* WVFrameworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		913FB7A72075D302003B49B1 /* WVFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		913FB7AC2075D302003B49B1 /* WVFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WVFrameworkTests.swift; sourceTree = "<group>"; };
 		913FB7AE2075D302003B49B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		913FB7B82075D31C003B49B1 /* WVFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WVFrameworkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				913FB7A12075D301003B49B1 /* WVFramework.h */,
 				913FB7A22075D301003B49B1 /* Info.plist */,
+				913FB7B82075D31C003B49B1 /* WVFrameworkView.swift */,
 			);
 			path = WVFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					913FB79D2075D301003B49B1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					913FB7A62075D302003B49B1 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				913FB7B92075D31C003B49B1 /* WVFrameworkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		913FB7B32075D302003B49B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = headerlabs.com.WVFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		913FB7B42075D302003B49B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		913FB7B62075D302003B49B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WVFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		913FB7B72075D302003B49B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WVFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
