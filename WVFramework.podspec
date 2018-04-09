@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://url.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/nehavks18/WVFramework.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
